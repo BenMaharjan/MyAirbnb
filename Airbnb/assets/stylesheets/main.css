@@ -46,3 +46,52 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+============================================
+BACKGROUND COLOR
+============================================
+*/
+
+body {
+    font-family:    Helvetica Neue, sans-serif;
+    font-size:  0.875rem;
+    line-height:    1.43;
+    color   #222222;
+    background-color:lightgrey;
+    margin: 0;
+}
+
+/*
+========================================
+Grid
+========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/*
+========================================
+Links
+========================================
+*/
+a {
+	color: #3c3f3f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a9b2b9;
+}
+
+.iconsLink {
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: underline;
+}
