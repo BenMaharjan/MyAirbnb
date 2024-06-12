@@ -76,6 +76,19 @@ Grid
 			box-sizing: border-box;
 }
 
+.container {
+    position: relative;
+    margin: 0 auto;
+	width: auto;
+    height: 300px;
+    padding: 30px 30px;
+    border: 1px solid #dfe2e5;
+	border-radius: 30px 30px 0px 0px;
+    background: #fff;
+}
+
+
+
 /*
 ========================================
 Links
@@ -94,4 +107,32 @@ a:hover {
     padding: 20px 50px;
     text-align: center;
     text-decoration: underline;
+}
+
+/*
+========================================
+Buttons
+========================================
+*/
+
+.btn {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 800px;
+    border: 1px solid #dfe2e5;
+	padding: 10px 30px;
+	border-radius: 50px;
+    background: #fff;
+	color: #a19d9d;
+	cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	display: inline-block;
+    margin: 0 auto;
+	font-weight: 400;
+	letter-spacing: .5px;
+}
+
+.bolded {
+    font-weight: bold;
 }
