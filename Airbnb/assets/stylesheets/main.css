@@ -54,17 +54,32 @@ BACKGROUND COLOR
 */
 
 body {
-    font-family:    Helvetica Neue, sans-serif;
-    font-size:  0.875rem;
-    line-height:    1.43;
-    color   #222222;
-    background-color:lightgrey;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #222222;
+    background-color:white;
     margin: 0;
 }
 
 /*
 ========================================
-Grid
+TEXT
+========================================
+*/
+
+.pastExpHeader{
+	font-size: 32px;
+	font-family: Helvetica Neue, sans-serif;
+	color: #222222;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+
+/*
+========================================
+GRID
 ========================================
 */
 
@@ -79,12 +94,20 @@ Grid
 .container {
     position: relative;
     margin: 0 auto;
-	width: auto;
-    height: 300px;
-    padding: 30px 30px;
-    border: 1px solid #dfe2e5;
+	width: auto;   
+    padding: 30px 30px;    	
+}
+
+.headerCont {
+	border: 1px solid #dfe2e5;
+	background: #fff;
+	height: 300px;
 	border-radius: 30px 30px 0px 0px;
-    background: #fff;
+}
+
+.InspFFG {
+	background: lightgrey;
+	height: 429px;
 }
 
 .belowTopSearchBar {
@@ -101,11 +124,26 @@ Grid
 	column-gap:70px
 }
 
+.iffgTopNavGrid {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto;
+	padding: 10px;
+	gap: 10px;
+}
+
+.iffgMainNavGrid{
+	padding:10px;
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+	gap:10px;
+}
+
 .a1 {
 	grid-column: 1;
 	grid-row: 1;
 }
-.b1{
+.b1	{
 	grid-column: 2;
 	grid-row: 1;
 }
@@ -127,6 +165,10 @@ Grid
 }
 .g1 {
 	grid-column: 7;
+	grid-row: 1;
+}
+.h1 {
+	grid-column: 8;
 	grid-row: 1;
 }
 
@@ -157,6 +199,29 @@ Grid
 .g2 {
 	grid-column: 7;
 	grid-row: 2;
+}
+.a3 {
+	grid-column: 1;
+	grid-row: 3;
+}
+.b3 {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.a4 {
+	grid-column: 1;
+	grid-row: 4;
+}
+.b4 {
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.flexContainer {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
 }
 
 
@@ -194,17 +259,24 @@ Buttons
     width: 800px;
     border: 1px solid #dfe2e5;
 	padding: 10px 30px;
-	border-radius: 50px;
-    background: #fff;
-	color: #a19d9d;
-	cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 50px;   
+	color: rgb(22, 22, 22);
+	cursor: pointer;   
 	display: inline-block;
-    margin: 0 auto;
+    margin: auto;
 	font-weight: 400;
 	letter-spacing: .5px;
+}
+
+searchBtn {
+	background: #fff;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .bolded {
     font-weight: bold;
 }
+
+
+
