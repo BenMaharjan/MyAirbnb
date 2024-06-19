@@ -68,14 +68,20 @@ TEXT
 ========================================
 */
 
-.pastExpHeader{
-	font-size: 32px;
+.headerText {	
 	font-family: Helvetica Neue, sans-serif;
 	color: #222222;
 	font-weight: bold;
 	padding-left: 10px;
 }
 
+.pastExperincesHeader {
+	font-size: 32px;
+}
+
+.iffgHeader {
+	font-size: 22px;
+}
 
 /*
 ========================================
@@ -105,9 +111,17 @@ GRID
 	border-radius: 30px 30px 0px 0px;
 }
 
-.InspFFG {
-	background: lightgrey;
+.footerCont{
+	background: #f7f7f7;
+	border-bottom: 1px solid lightgrey;
+}
+
+.InspFFG {	
 	height: 429px;
+}
+
+.supportCont {
+	height: 258.09px;
 }
 
 .belowTopSearchBar {
@@ -116,27 +130,35 @@ GRID
     left: auto;
 }
 
-.topNavBar {
+.mainGrid{
 	display: grid;
+
+}
+
+.topNavBar {	
 	background-color: white;
 	grid-template-columns: auto auto auto auto auto auto auto;
 	grid-template-rows: auto auto;
 	column-gap:70px
 }
 
-.iffgTopNavGrid {
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto auto auto;
+.bottomGrid {
 	padding: 10px;
 	gap: 10px;
 }
 
+.iffgTopNavGrid {
+	grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+
 .iffgMainNavGrid{
-	padding:10px;
-	display:grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
-	gap:10px;
+}
+
+.supportGrid {
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 .a1 {
@@ -217,14 +239,24 @@ GRID
 	grid-column: 2;
 	grid-row: 4;
 }
+.a5 {
+	grid-column: 1;
+	grid-row: 5;
+}
+.a6 {
+	grid-column: 1;
+	grid-row: 6;
+}
+.a7 {
+	grid-column: 1;
+	grid-row: 7;
+}
 
 .flexContainer {
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 }
-
-
 
 /*
 ========================================
