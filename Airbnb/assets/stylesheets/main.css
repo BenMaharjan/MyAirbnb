@@ -83,9 +83,13 @@ TEXT
 	font-size: 22px;
 }
 
+.bolded {
+    font-weight: bold;
+}
+
 /*
 ========================================
-GRID
+CONTAINERS
 ========================================
 */
 
@@ -129,6 +133,12 @@ GRID
 	top: 50%;
     left: auto;
 }
+
+/*
+============================================
+GRIDS
+============================================
+*/
 
 .mainGrid{
 	display: grid;
@@ -252,17 +262,25 @@ GRID
 	grid-row: 7;
 }
 
+/*
+=======================================
+FLEXBOX
+=======================================
+*/
+
 .flexContainer {
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 }
+	
 
 /*
 ========================================
 Links
 ========================================
 */
+
 a {
 	color: #3c3f3f;
 	text-decoration: none;
@@ -306,9 +324,7 @@ searchBtn {
 
 }
 
-.bolded {
-    font-weight: bold;
-}
+
 
 
 
