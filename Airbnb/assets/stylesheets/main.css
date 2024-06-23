@@ -116,14 +116,15 @@ CONTAINERS
 	font-weight: bold;
 	background: #DDDDDD;
 	padding: 30px;
+	padding-bottom: 50px;
 }
 
 .topCont {
-	position:fixed;
+	position: fixed;
 	margin: 0 auto;
-	width: auto;
+	width: 100%;
 	padding: 30px;
-	top: 60px;
+	top: 70px;
 }
 
 .headerCont {
