@@ -68,6 +68,8 @@ TEXT
 ========================================
 */
 
+.iffgHeader,
+.pastExperincesHeader,
 .headerText {	
 	font-family: Helvetica Neue, sans-serif;
 	color: #222222;
@@ -101,11 +103,19 @@ CONTAINERS
 			box-sizing: border-box;
 }
 
+.footerCont,
+.lmaiCont,
+.topHeaderCont,
 .container {
     position: relative;
     margin: 0 auto;
 	width: auto;   
     padding: 30px 30px;    	
+}
+
+.topHeaderCont {
+	height: 300px;
+	z-index: -1;
 }
 
 .lmaiCont {
@@ -119,6 +129,13 @@ CONTAINERS
 	padding-bottom: 50px;
 }
 
+.footerCont {
+	background: #f7f7f7;
+	border-bottom: 1px solid lightgrey;
+	height:auto;
+}
+
+.headerCont, 
 .topCont {
 	position: fixed;
 	margin: 0 auto;
@@ -128,34 +145,11 @@ CONTAINERS
 	overflow-y:auto;
 }
 
-
 .headerCont {
 	border: 1px solid #dfe2e5;
 	background: #fff;
 	height: 300px;
 	border-radius: 30px 30px 0px 0px;
-}
-
-.topHeaderCont{
-	height: 300px;
-	z-index: -1;
-}
-
-.footerCont{
-	background: #f7f7f7;
-	border-bottom: 1px solid lightgrey;
-}
-
-.InspFFG {	
-	height: 429px;
-}
-
-.supportCont {
-	height: 258.09px;
-}
-
-.bottomCont {
-	height: 216px;
 }
 
 .belowTopSearchBar {
@@ -170,9 +164,14 @@ GRIDS
 ============================================
 */
 
-.mainGrid{
+.supportGrid,
+.iffgMainNavGrid,
+.iffgTopNavGrid,
+.topNavBar,
+.mainGrid {
 	display: grid;
-
+	padding: 10px;
+	gap: 10px;
 }
 
 .topNavBar {	
@@ -182,16 +181,11 @@ GRIDS
 	column-gap:70px;
 }
 
-.bottomGrid {
-	padding: 10px;
-	gap: 10px;
-}
-
 .iffgTopNavGrid {
 	grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 
-.iffgMainNavGrid{
+.iffgMainNavGrid {
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
 }
@@ -233,7 +227,6 @@ GRIDS
 	grid-column: 8;
 	grid-row: 1;
 }
-
 .i1 {
 	grid-column: 9;
 	grid-row: 1;
@@ -246,7 +239,6 @@ GRIDS
 	grid-column: 11;
 	grid-row: 1;
 }
-
 .l1 {
 	grid-column: 12;
 	grid-row: 1;
@@ -259,12 +251,10 @@ GRIDS
 	grid-column: 14;
 	grid-row: 1;
 }
-
 .o1 {
 	grid-column: 15;
 	grid-row: 1;
 }
-
 .a2 {
 	grid-column: 1;
 	grid-row: 2;
@@ -297,7 +287,6 @@ GRIDS
 	grid-column: 8;
 	grid-row: 2;
 }
-
 .i2 {
 	grid-column: 9;
 	grid-row: 2;
@@ -310,7 +299,6 @@ GRIDS
 	grid-column: 11;
 	grid-row: 2;
 }
-
 .l2 {
 	grid-column: 12;
 	grid-row: 2;
@@ -323,12 +311,10 @@ GRIDS
 	grid-column: 14;
 	grid-row: 2;
 }
-
 .o2 {
 	grid-column: 15;
 	grid-row: 2;
 }
-
 .a3 {
 	grid-column: 1;
 	grid-row: 3;
@@ -337,7 +323,6 @@ GRIDS
 	grid-column: 2;
 	grid-row: 3;
 }
-
 .a4 {
 	grid-column: 1;
 	grid-row: 4;
@@ -378,7 +363,6 @@ FLEXBOX
 	justify-content: flex-start;
 	row-gap: 10px;
 }
-	
 
 /*
 ========================================
@@ -401,6 +385,7 @@ Buttons
 ========================================
 */
 
+.searchBtn,
 .btn {
     position: absolute;
     top: 10%;
