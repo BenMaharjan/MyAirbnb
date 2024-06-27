@@ -68,24 +68,24 @@ TEXT
 ========================================
 */
 
-.iffgHeader,
-.pastExperincesHeader,
-.headerText {	
+.HeaderText__IFFGHeader,
+.HeaderText__PastExperincesHeader,
+.HeaderText {	
 	font-family: Helvetica Neue, sans-serif;
 	color: #222222;
 	font-weight: bold;
 	padding-left: 10px;
 }
 
-.pastExperincesHeader {
+.HeaderText__PastExperincesHeader {
 	font-size: 32px;
 }
 
-.iffgHeader {
+.HeaderText__IFFGHeader {
 	font-size: 22px;
 }
 
-.bolded {
+.Bolded {
     font-weight: bold;
 }
 
@@ -103,22 +103,22 @@ CONTAINERS
 			box-sizing: border-box;
 }
 
-.footerCont,
-.lmaiCont,
-.topHeaderCont,
-.container {
+.Container__FooterCont,
+.Container__LMAICont,
+.Container__TopHeaderCont,
+.Container {
     position: relative;
     margin: 0 auto;
 	width: auto;   
     padding: 30px 30px;    	
 }
 
-.topHeaderCont {
+.Container__TopHeaderCont {
 	height: 300px;
 	z-index: -1;
 }
 
-.lmaiCont {
+.Container__LMAICont {
 	display: block;
 	font-size: 15px;
 	text-align: center;
@@ -129,14 +129,14 @@ CONTAINERS
 	padding-bottom: 50px;
 }
 
-.footerCont {
+.Container__FooterCont {
 	background: #f7f7f7;
 	border-bottom: 1px solid lightgrey;
 	height:auto;
 }
 
-.headerCont, 
-.topCont {
+.TopCont__HeaderCont, 
+.TopCont {
 	position: fixed;
 	margin: 0 auto;
 	width: 100%;
@@ -145,14 +145,14 @@ CONTAINERS
 	overflow-y:auto;
 }
 
-.headerCont {
+.TopCont__HeaderCont {
 	border: 1px solid #dfe2e5;
 	background: #fff;
 	height: 300px;
 	border-radius: 30px 30px 0px 0px;
 }
 
-.belowTopSearchBar {
+.BelowTopSearchBar {
 	position: absolute;
 	top: 50%;
     left: auto;
@@ -164,33 +164,33 @@ GRIDS
 ============================================
 */
 
-.supportGrid,
-.iffgMainNavGrid,
-.iffgTopNavGrid,
-.topNavBar,
-.mainGrid {
+.MainGrid__SupportGrid,
+.MainGrid__IFFGMainNavGrid,
+.MainGrid__IFFGTopNavGrid,
+.MainGrid__TopNavBar,
+.MainGrid {
 	display: grid;
 	padding: 10px;
 	gap: 10px;
 }
 
-.topNavBar {	
+.MainGrid__TopNavBar {	
 	background-color: white;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 	grid-template-rows: auto auto;
 	column-gap:70px;
 }
 
-.iffgTopNavGrid {
+.MainGrid__IFFGTopNavGrid {
 	grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 
-.iffgMainNavGrid {
+.MainGrid__IFFGMainNavGrid {
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto auto;
 }
 
-.supportGrid {
+.MainGrid__SupportGrid {
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto auto auto auto auto;
 }
@@ -350,13 +350,13 @@ FLEXBOX
 =======================================
 */
 
-.flexContainer {
+.FlexContainer {
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 }
 
-.buttonFlex {
+.ButtonFlex {
 	display: flex;
 	flex-direction:row;
 	flex-wrap: nowrap;
@@ -385,8 +385,8 @@ Buttons
 ========================================
 */
 
-.searchBtn,
-.btn {
+.Btn__SearchBtn,
+.Btn {
     position: absolute;
     top: 10%;
 	left:30%;
@@ -402,12 +402,12 @@ Buttons
 	letter-spacing: .5px;
 }
 
-.searchBtn {
+.Btn__SearchBtn {
 	background: #fff;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.button {
+.Button {
 	position: relative;
 	height:20px;
 	width:200px;
